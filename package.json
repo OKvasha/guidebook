@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview"
   },
-    "browserslist": [
+  "browserslist": [
     "last 2 Chrome versions",
     "last 2 Firefox versions",
     "last 2 Safari versions",
@@ -21,6 +21,7 @@
   },
   "dependencies": {
     "animate.css": "^4.1.1",
+    "normalize.css": "^8.0.1",
     "wow.js": "^1.2.2"
   }
 }

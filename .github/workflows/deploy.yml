@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Deploy Guidebook to GitHub
 
 # Запускается при пуше в main и вручную из интерфейса
 on:

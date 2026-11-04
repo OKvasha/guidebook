@@ -1,5 +1,12 @@
-@use './scss/variables';
+/* Global */
+/* ------------------------------------ */
+@use "scss/global/_fonts";
+@use "scss/global/_mixins";
+@use "scss/global/_reboot";
+@use "scss/global/_container";
 
-body {
-  font-family: 'Inter', sans-serif;
-}
+
+/* Blocks */
+/* ------------------------------------ */
+@use "scss/blocks/_header";
+@use "scss/blocks/_footer";
