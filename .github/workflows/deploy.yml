@@ -1,0 +1,52 @@
+name: Deploy to GitHub Pages
+
+# Запускается при пуше в main и вручную из интерфейса
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Права: страницы GitHub выдаются только под ограниченным токеном
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Чтобы новые деплои не накладывались друг на друга
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Забрать код
+        uses: actions/checkout@v4
+
+      - name: Установить Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Установить зависимости
+        run: npm ci
+
+      - name: Собрать проект
+        run: npm run build
+
+      - name: Загрузить артефакт сборки
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Опубликовать
+        id: deployment
+        uses: actions/deploy-pages@v4
