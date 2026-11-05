@@ -1,4 +1,9 @@
-import "normalize.css/normalize.css"
-import "./style.scss"
-import "animate.css/animate.min.css"
-import "./js/wow-init.js"
+import 'normalize.css/normalize.css'
+import './style.scss'
+import 'animate.css/animate.min.css'
+import './js/wow-init.js'
+import Swiper from 'swiper'
+import { Navigation, Pagination, Autoplay } from 'swiper/modules'
+import 'swiper/css'
+import 'swiper/css/navigation'
+import 'swiper/css/pagination'

@@ -7,9 +7,10 @@
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    margin-bottom: 176px;
 
     /* фон */
-    background-image: url('/src/assets/main-bg.jpg');
+    background-image: url('/images/main-bg.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,12 +21,6 @@
 
     &__heading {
         margin: 0 0 18px 0;
-        font-family: $ff-prata;
-        color: $color-brown;
-        font-weight: 400;
-        font-size: 48px;
-        line-height: 100%;
-        letter-spacing: 0;
     }
 
     &__text {

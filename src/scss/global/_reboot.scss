@@ -4,6 +4,38 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: $color-bege;
+}
+
+h1,
+h2,
+h3 {
+    font-family: $ff-prata;
+    font-weight: 400;
+    font-style: Regular;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0 0 57px 0;
+}
+
+h1,
+h2 {
+    color: $color-brown;
+}
+
+h1 {
+    font-size: $fz-h1;
+}
+
+h2 {
+    font-size: $fz-h2;
+}
+
+h3 {
+    font-size: $fz-h3;
+}
+
 img {
     display: block;
     max-width: 100%;
@@ -19,4 +51,8 @@ ul {
 
 a {
     text-decoration: none;
+}
+
+p {
+    margin: 0;
 }

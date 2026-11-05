@@ -1,0 +1,21 @@
+@use '../global/variables' as *;
+
+.swiper {
+    &-slide {
+        display: grid;
+        grid-template-columns: 771px auto;
+        gap: 124px;
+        &__img {
+            position: relative;
+            transform: translateX(-95px);
+        }
+        &__content-text {
+            font-family: $ff-raleway;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+        }
+    }
+}
