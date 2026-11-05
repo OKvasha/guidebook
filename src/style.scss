@@ -1,12 +1,12 @@
 /* Global */
 /* ------------------------------------ */
-@use "scss/global/_fonts";
-@use "scss/global/_mixins";
-@use "scss/global/_reboot";
-@use "scss/global/_container";
-
+@use 'scss/global/_fonts';
+@use 'scss/global/_mixins';
+@use 'scss/global/_reboot';
+@use 'scss/global/_container';
 
 /* Blocks */
 /* ------------------------------------ */
-@use "scss/blocks/_header";
-@use "scss/blocks/_footer";
+@use 'scss/blocks/_header';
+@use 'scss/blocks/_hero';
+@use 'scss/blocks/_footer';

@@ -16,6 +16,7 @@
     "last 2 Edge versions"
   ],
   "devDependencies": {
+    "prettier": "^3.9.10",
     "sass": "^1.107.1",
     "vite": "^8.3.5"
   },

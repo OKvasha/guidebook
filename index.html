@@ -1,22 +1,47 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>guidebook</title>
-  </head>
-  <body>
+    <head>
+        <meta charset="UTF-8" />
+        <!--<link rel="icon" type="image/svg+xml" href="/favicon.svg" />-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>guidebook</title>
+    </head>
+    <body>
+        <header class="header">
+            <ul class="header__nav-list">
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">О городе</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">История</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Достопримечательности</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Бюджет поездки</a>
+                </li>
+                <li class="header__nav-item">
+                    <a class="header__nav-link" href="#">Карта Петербурга</a>
+                </li>
+            </ul>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero__inner">
+                    <h1 class="hero__heading">Путеводитель по Санкт-Петербургу</h1>
+                    <p class="hero__text">Рассказываем самое интересное</p>
+                </div>
+            </section>
+            <section class="about"><div class="container">о городе</div></section>
+            <section class="history"><div class="container">история</div></section>
+            <section class="place"><div class="container">места</div></section>
+            <section class="budget"><div class="container">бюджет</div></section>
+            <section class="map"><div class="container">карта</div></section>
+        </main>
+        <footer class="footer"></footer>
 
-    <header class="header">шапка</header>
-    <section class="hero">слайдер</section>
-    <section class="about">о городе</section>
-    <section class="history">история</section>
-    <section class="place">места</section>
-    <section class="budget">бюджет</section>
-    <section class="map">карта</section>
-
-    <script src="/node_modules/wow.js/dist/wow.min.js"></script>
-    <script type="module" src="/src/main.js"></script>
-  </body>
+        <script src="/node_modules/wow.js/dist/wow.min.js"></script>
+        <script type="module" src="/src/main.js"></script>
+    </body>
 </html>
