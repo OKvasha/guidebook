@@ -1,0 +1,51 @@
+@use '../global/variables' as *;
+
+.budget {
+    padding-top: 130px;
+    margin-bottom: 270px;
+    &__description {
+        display: grid;
+        grid-template-columns: 1fr 676px;
+        margin-bottom: 242px;
+        &-text {
+            grid-column: 2;
+            font-family: $ff-raleway;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0%;
+        }
+    }
+    &__list {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+    }
+
+    &__item {
+        display: grid;
+        grid-template-rows: 56px 1fr;
+        gap: 34px;
+        justify-items: center;
+        &-content {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            gap: 16px;
+            justify-items: center;
+        }
+        &-text {
+            font-family: $ff-raleway;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 26px;
+            letter-spacing: 0%;
+        }
+        &-price {
+            font-family: $ff-prata;
+            font-weight: 400;
+            font-size: 22px;
+            line-height: 26px;
+            letter-spacing: 0%;
+        }
+    }
+}

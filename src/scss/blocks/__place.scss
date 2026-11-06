@@ -1,0 +1,45 @@
+@use '../global/variables' as *;
+
+.place {
+    background-color: $color-white;
+    padding: 130px 0 76px 0;
+    &__title {
+        margin-bottom: 162px;
+    }
+    &__description {
+        display: grid;
+        grid-template-columns: 1fr 676px;
+        margin-bottom: 180px;
+        &-text {
+            grid-column: 2;
+            font-family: $ff-raleway;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 30px;
+            letter-spacing: 0%;
+        }
+    }
+
+    &__item {
+        display: grid;
+        grid-template-columns: 1fr 376px 476px;
+        gap: 24px;
+        padding: 76px 0;
+        margin-bottom: 23px;
+        border-top: 0.5px solid $color-yellow;
+        &-title {
+            font-family: $ff-prata;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 0%;
+        }
+        &-text {
+            font-family: $ff-raleway;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 26px;
+            letter-spacing: 0%;
+        }
+    }
+}
