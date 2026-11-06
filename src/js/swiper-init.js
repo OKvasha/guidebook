@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
         modules: [Navigation, Pagination, Autoplay],
         effect: 'fade',
         loop: true,
-        //autoplay: {
-        //   delay: 5000,
-        //    disableOnInteraction: false,
-        //},
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
         pagination: {
             el: '.about__slider .swiper-pagination',
             clickable: true,

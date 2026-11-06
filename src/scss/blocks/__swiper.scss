@@ -2,20 +2,16 @@
 
 .swiper {
     /* пагинация */
-    --swiper-pagination-color: #faca47; /* активный буллит */
-    --swiper-pagination-bullet-inactive-color: #ffffff;
+    --swiper-pagination-color: $color-yellow; /* активный буллит */
+    --swiper-pagination-bullet-inactive-color: $color-white;
     --swiper-pagination-bullet-inactive-opacity: 1;
     --swiper-pagination-bullet-horizontal-gap: 10px;
-    //--swiper-pagination-top: 40px;
     --swiper-pagination-bottom: 22px;
     --swiper-pagination-bullet-height: 2px;
     --swiper-pagination-bullet-width: 32px;
 
     /* стрелки */
-    //--swiper-navigation-color: transparent;
     --swiper-navigation-size: 76px;
-    //--swiper-navigation-sides-offset: 20px;
-    //--swiper-navigation-top-offset: 50%;
 
     &-slide {
         &__inner {

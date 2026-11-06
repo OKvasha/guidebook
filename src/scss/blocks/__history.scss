@@ -1,0 +1,129 @@
+@use '../global/variables' as *;
+
+.history {
+    padding-top: 38px;
+    &__wrapper {
+        max-width: 976px;
+        margin: 0 auto;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            top: 88px;
+            bottom: 88px;
+            left: 50%;
+            width: 1px;
+            background-color: $color-yellow;
+        }
+    }
+
+    &__item {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 40px 1fr;
+        grid-template-rows: 176px;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+
+    &__step {
+        grid-column: 2;
+        grid-row: 1;
+        justify-self: center;
+        position: relative;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: $color-yellow;
+        color: $color-white;
+        display: grid;
+        place-items: center;
+        font-family: $ff-prata;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 18px;
+        letter-spacing: 0%;
+        text-align: center;
+    }
+
+    &__step::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 100%;
+        width: 290px; // расстояние от кружка до текста
+        height: 1px;
+        background-color: $color-yellow;
+    }
+
+    &__card {
+        grid-column: 1;
+        grid-row: 1;
+        flex-direction: row-reverse;
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    // нечётные пункты — контент слева, фото наружу
+    &__item:nth-child(odd) {
+        .history__card {
+            grid-column: 3;
+            flex-direction: row; // фото уходит на внешний край
+        }
+        .history__step::after {
+            left: 100%;
+            right: auto;
+        }
+        .history__info {
+            order: 1;
+        }
+        .history__photo {
+            order: 2;
+        }
+    }
+
+    &__info {
+        padding: 0 30px;
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 24px;
+        align-content: center;
+    }
+
+    &__date {
+        font-family: $ff-prata;
+        text-align: center;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: 0%;
+        align-self: end;
+    }
+
+    &__text {
+        font-family: $ff-raleway;
+        text-align: center;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0%;
+        align-self: start;
+    }
+
+    &__photo {
+        flex-shrink: 0;
+        border: 1px solid $color-yellow;
+        border-radius: 50%;
+        padding: 12px;
+    }
+
+    &__photo img {
+        display: block;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+}
