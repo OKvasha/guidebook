@@ -1,9 +1,10 @@
 @use '../global/variables' as *;
 
 .about {
-    padding-top: 24px;
+    padding-top: 30px;
     margin-bottom: 124px;
     &__slider {
+        max-width: 1366px;
         margin-bottom: 124px;
     }
     &__description {

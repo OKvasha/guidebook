@@ -1,21 +1,67 @@
 @use '../global/variables' as *;
 
 .swiper {
+    /* пагинация */
+    --swiper-pagination-color: #faca47; /* активный буллит */
+    --swiper-pagination-bullet-inactive-color: #ffffff;
+    --swiper-pagination-bullet-inactive-opacity: 1;
+    --swiper-pagination-bullet-horizontal-gap: 10px;
+    //--swiper-pagination-top: 40px;
+    --swiper-pagination-bottom: 22px;
+    --swiper-pagination-bullet-height: 2px;
+    --swiper-pagination-bullet-width: 32px;
+
+    /* стрелки */
+    //--swiper-navigation-color: transparent;
+    --swiper-navigation-size: 76px;
+    //--swiper-navigation-sides-offset: 20px;
+    //--swiper-navigation-top-offset: 50%;
+
     &-slide {
-        display: grid;
-        grid-template-columns: 771px auto;
-        gap: 124px;
+        &__inner {
+            display: grid;
+            grid-template-columns: 771px auto;
+            gap: 124px;
+            padding-right: 95px;
+        }
         &__img {
             position: relative;
-            transform: translateX(-95px);
         }
         &__content-text {
             font-family: $ff-raleway;
             font-weight: 400;
-            font-style: Regular;
             font-size: 18px;
             line-height: 26px;
             letter-spacing: 0%;
         }
+    }
+    &-navigate {
+        display: grid;
+        grid-template-columns: 771px auto;
+        gap: 121px;
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        align-items: end;
+    }
+
+    &-arrows {
+        position: relative;
+        bottom: 100px;
+        display: flex;
+        gap: 30px;
+    }
+
+    &-pagination,
+    &-button-prev,
+    &-button-next {
+        position: relative;
+        inset: auto;
+        margin: 0;
+    }
+
+    &-button-prev::after,
+    &-button-next::after {
+        display: none;
     }
 }

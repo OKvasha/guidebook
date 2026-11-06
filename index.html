@@ -36,11 +36,14 @@
             <section class="about">
                 <div class="container">
                     <h2 class="about__title">О городе</h2>
-
-                    <div class="swiper about__slider">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <div class="swiper-slide__img"><img src="/images/Peterhof.jpg" alt="Петергоф" /></div>
+                </div>
+                <div class="swiper about__slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__inner">
+                                <div class="swiper-slide__img">
+                                    <img src="/images/Peterhof.jpg" alt="Петергоф" />
+                                </div>
                                 <div class="swiper-slide__content">
                                     <p class="swiper-slide__content-text">
                                         Санкт-Петербург&nbsp;&mdash; один из&nbsp;самых красивых городов России, который
@@ -49,7 +52,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__inner">
                                 <div class="swiper-slide__img">
                                     <img src="/images/horseman.jpg" alt="Памятник Петру 1" />
                                 </div>
@@ -60,7 +65,9 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide">
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide__inner">
                                 <div class="swiper-slide__img">
                                     <img src="/images/cruise-liner.jpg" alt="Круисный лайнер" />
                                 </div>
@@ -72,18 +79,29 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="swiper-slide">Слайд 2</div>
-                            <div class="swiper-slide">Слайд 3</div>
                         </div>
+                    </div>
 
+                    <div class="swiper-navigate">
                         <!-- Пагинация (точки) -->
                         <div class="swiper-pagination"></div>
 
                         <!-- Кнопки навигации -->
-                        <div class="swiper-button-prev"></div>
-                        <div class="swiper-button-next"></div>
+                        <div class="swiper-arrows">
+                            <div class="swiper-button-prev">
+                                <svg class="arrow-icon" width="76" height="76" aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#arrow-prev"></use>
+                                </svg>
+                            </div>
+                            <div class="swiper-button-next">
+                                <svg class="arrow-icon" width="76" height="76" aria-hidden="true">
+                                    <use xlink:href="/images/sprite.svg#arrow-next"></use>
+                                </svg>
+                            </div>
+                        </div>
                     </div>
                 </div>
+
                 <div class="about__description">
                     <div class="container">
                         <p class="about__description-text">
